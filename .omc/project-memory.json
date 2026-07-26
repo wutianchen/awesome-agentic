@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1785078487861,
+  "projectRoot": "/Users/tianchenwu/Projects/personal/awesome-agentic",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "code agent": {
+      "path": "code agent",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1785078487809,
+      "keyFiles": [
+        "README.md",
+        "the-loop.md"
+      ]
+    },
+    "llm": {
+      "path": "llm",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1785078487810,
+      "keyFiles": [
+        "README.md"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "README.md",
+      "accessCount": 15,
+      "lastAccessed": 1785081858652,
+      "type": "file"
+    },
+    {
+      "path": "code-agent/pi/meta.md",
+      "accessCount": 2,
+      "lastAccessed": 1785083563830,
+      "type": "file"
+    },
+    {
+      "path": "code agent/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1785078736928,
+      "type": "file"
+    },
+    {
+      "path": "code-agent/pi/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1785083372493,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

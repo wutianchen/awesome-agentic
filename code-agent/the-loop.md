@@ -35,7 +35,7 @@ while True:
 
 ## Harness = the loop + life support
 
-The loop is ~20% of a coding agent; the other 80% keeps the loop productive over hours. Every harness feature maps to a loop problem:
+The loop is ~20% of a code agent; the other 80% keeps the loop productive over hours. Every harness feature maps to a loop problem:
 
 | Loop problem | Harness feature |
 |---|---|
