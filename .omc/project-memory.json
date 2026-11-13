@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1785078487861,
+  "lastScanned": 1794204608443,
   "projectRoot": "/Users/tianchenwu/Projects/personal/awesome-agentic",
   "techStack": {
     "languages": [],
@@ -29,31 +29,70 @@
   },
   "customNotes": [],
   "directoryMap": {
-    "code agent": {
-      "path": "code agent",
+    "code-agent": {
+      "path": "code-agent",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1785078487809,
+      "lastAccessed": 1794204608423,
       "keyFiles": [
         "README.md",
         "the-loop.md"
+      ]
+    },
+    "framework": {
+      "path": "framework",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1794204608424,
+      "keyFiles": [
+        "LangGraph.md"
       ]
     },
     "llm": {
       "path": "llm",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1785078487810,
+      "lastAccessed": 1794204608424,
       "keyFiles": [
         "README.md"
       ]
+    },
+    "primitives": {
+      "path": "primitives",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1794204608426,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "provider-api": {
+      "path": "provider-api",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794204608428,
+      "keyFiles": []
+    },
+    "techniques": {
+      "path": "techniques",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794204608429,
+      "keyFiles": []
+    },
+    "toolbox": {
+      "path": "toolbox",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794204608431,
+      "keyFiles": []
     }
   },
   "hotPaths": [
     {
       "path": "README.md",
-      "accessCount": 15,
-      "lastAccessed": 1785081858652,
+      "accessCount": 19,
+      "lastAccessed": 1794562187793,
       "type": "file"
     },
     {
@@ -72,6 +111,24 @@
       "path": "code-agent/pi/README.md",
       "accessCount": 1,
       "lastAccessed": 1785083372493,
+      "type": "file"
+    },
+    {
+      "path": "toolbox/herdr/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1785231493776,
+      "type": "file"
+    },
+    {
+      "path": "jarvis.md",
+      "accessCount": 1,
+      "lastAccessed": 1794205107322,
+      "type": "file"
+    },
+    {
+      "path": "jev.md",
+      "accessCount": 1,
+      "lastAccessed": 1794205992570,
       "type": "file"
     }
   ],

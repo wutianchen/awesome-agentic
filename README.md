@@ -30,7 +30,7 @@ install: Claude Managed Agents · Codex cloud · Devin · Jules
 | Layer | What it is | Examples |
 |---|---|---|
 | 1. Provider API / SDK | raw model access — native tool calling, streaming, structured outputs; you own the loop | Anthropic SDK, OpenAI SDK, Google GenAI SDK; gateways (OpenRouter, LiteLLM) aggregate many providers behind one layer-1 API |
-| 2. Framework (branch, not foundation) | provider abstraction + graph/loop orchestration for your own general LLM apps (RAG, pipelines, non-code agents); an *alternative* to layer 3, not a substrate for it — no code agent is built on it | LangChain / LangGraph, Vercel AI SDK |
+| 2. Framework (branch, not foundation) | provider abstraction + graph/loop orchestration for your own general LLM apps (RAG, pipelines, non-code agents); an *alternative* to layer 3, not a substrate for it — no code agent is built on it | LangChain / LangGraph, Vercel AI SDK, [OpenJarvis](https://github.com/open-jarvis/OpenJarvis) (local-first personal AI agents, on-device models) |
 | 3. Agent harness (library) | prebuilt loop + tools, embeddable in your own app; you host and deploy | Claude Agent SDK (Claude Code as a library: file tools, bash, sessions, subagents), Codex SDK, OpenAI Agents SDK, pi SDK / RPC, tau `AgentHarness` |
 | 4. Code agent (application) | finished tool: loop + tools + TUI + sessions | claude code, codex, opencode, pi, tau, Gemini CLI, Aider |
 | 5. Orchestration | workflows/skills/multi-agent layered on top of an existing agent | oh-my-claudecode, oh-my-codex |
@@ -68,3 +68,31 @@ These cut across layers rather than living in one:
 * **MCP** (Model Context Protocol) — standard for exposing tools/resources to any agent; consumed at layers 1, 3, 4, and 6
 * **Skills** — packaged task instructions loaded on demand; work in code agents (layer 4), harnesses (layer 3), and hosted agents (layer 6)
 * **AGENTS.md / CLAUDE.md** — repo-level agent instructions; read by most layer-4 agents regardless of vendor
+
+## Landscape
+
+Everything referenced in these notes, by kind. "Layer" refers to the table above.
+
+| Kind | Name | Notes |
+|---|---|---|
+| Model provider | Anthropic · OpenAI · Google | first-party model APIs and SDKs (layer 1) |
+| Model provider | [TypeSafe AI](https://typesafe.ai) | makes Jev, a decision model returning typed JSON; early access since 2026-09-15 — see [jev.md](jev.md) |
+| Model gateway | [OpenRouter](https://openrouter.ai/) · LiteLLM | one API in front of many providers (layer 1) |
+| Model gateway (third-party reseller) | [DefAPI](https://defapi.org/) | prepaid-credit gateway to OpenAI, Anthropic, Google, and TypeSafe models; run by KeyStorm LLC (Wyoming); its terms say provider brands "do not imply any endorsement", so it is not an official channel; few public reviews |
+| Framework | LangChain / LangGraph · Vercel AI SDK | build your own general LLM apps (layer 2) |
+| Framework | [OpenJarvis](https://github.com/open-jarvis/OpenJarvis) | local-first personal AI agents from Stanford — see [jarvis.md](jarvis.md) |
+| Framework | [Letta](https://github.com/letta-ai/letta) | stateful agents with long-term memory |
+| Agent harness | Claude Agent SDK · Codex SDK · OpenAI Agents SDK · pi SDK · tau `AgentHarness` | prebuilt loop + tools you embed (layer 3) |
+| Code agent | claude code · codex · [opencode](https://opencode.ai/) · [pi](https://pi.dev/) · [tau](https://github.com/huggingface/tau) · Gemini CLI · Aider · [goose](https://github.com/aaif-goose/goose) · [Claw Code](https://github.com/ultraworkers/claw-code) | finished agents you type into (layer 4) |
+| Orchestration | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) · [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) · [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) · [wshobson/agents](https://github.com/wshobson/agents) | workflows and multi-agent add-ons on top of a code agent (layer 5) |
+| Hosted agent | Claude Managed Agents · OpenAI Codex cloud · Devin · Google Jules · GitHub Copilot coding agent | provider runs harness and deployment (layer 6) |
+| Personal agent | [OpenClaw](https://github.com/openclaw/openclaw) | assistant on your machine reached through chat apps; Gateway control plane with a themable Control UI |
+| Personal agent | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | self-improving agent that writes its own skills |
+| Personal agent | [Khoj](https://github.com/khoj-ai/khoj) | self-hostable "second brain" with automations and research |
+| Local AI stack | [LocalAI](https://github.com/mudler/LocalAI) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) · [Open WebUI](https://github.com/open-webui/open-webui) · Ollama | run or chat with models on your own hardware |
+| Standard | MCP · Skills ([agentskills.io](https://agentskills.io/specification)) · AGENTS.md / CLAUDE.md | cross-layer conventions, see above |
+| Technique | tool calling · ReAct · CodeAct · RAG | core agent patterns: call tools, reason-act loops, act by writing code, retrieve context |
+| Technique | prompt caching · context compaction · subagents · sandboxing | harness engineering that makes long agent runs cheap, fit in context, and safe |
+| Benchmark | [SWE-bench](https://www.swebench.com/) | code-agent evaluation |
+| Analysis tool | [Understand Anything](https://github.com/Egonex-AI/Understand-Anything) | knowledge graphs of a codebase for agents and people |
+| Organization | Nous Research · Hugging Face · OpenClaw Foundation · Stanford Hazy Research / Scaling Intelligence Lab | makers of Hermes Agent, tau, OpenClaw, and OpenJarvis |
