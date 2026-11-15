@@ -26,3 +26,10 @@ Language Server Protocol
 #### Helm
 
 tbd
+
+
+## Automated refactoring
+
+Deterministic, type-aware code transformations. An agent runs a recipe instead of editing files one by one, so large changes come out exact and repeatable.
+
+* [OpenRewrite](https://docs.openrewrite.org/) — mass refactoring engine maintained by Moderne. It runs prepackaged recipes for framework migrations, security fixes, and style consistency over a Lossless Semantic Tree (LST), a type-aware model of the code that keeps formatting. Parsers for Java (strongest), Kotlin, Groovy, JavaScript/TypeScript, Python, C#, and config files such as Maven, Gradle, YAML, and Docker. Tiered licensing: the framework is open source, but not every recipe is. Moderne is the commercial platform that runs recipes across many repos
