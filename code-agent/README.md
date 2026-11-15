@@ -36,6 +36,11 @@ https://yeachan-heo.github.io/oh-my-codex-website/
 
 tbd
 
+#### [oh-my-phi](https://omp.sh/)
+
+https://omp.sh/
+
+
 ## LLM
 
 #### Benchmark

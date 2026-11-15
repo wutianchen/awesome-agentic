@@ -46,14 +46,7 @@ In short: **a project is where your code lives; a session is a conversation abou
 
 [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) is meant to provide the language-specific smarts and communicate with development tools over a protocol that enables inter-process communication. See the list of [implementations](https://microsoft.github.io/language-server-protocol/implementors/servers/)
 
-LSP can be used together with mcp-lsp server like
-
-* [serena](https://github.com/oraios/serena) top consideration
-
-other minor ones (based on github stars):
-
-* [mcp-language-server](https://github.com/isaacphi/mcp-language-server)
-* [lsp-mcp](https://github.com/jonrad/lsp-mcp)
+LSP can be used together with an MCP server that exposes it to agents. [Serena](../mcp-and-lsp/serena.md) is the top consideration; that page also covers the alternatives.
 
 
 ### Tool
