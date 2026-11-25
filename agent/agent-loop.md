@@ -41,3 +41,7 @@ Where the loop lives decides the [layers](README.md#layers-of-using-llm):
 
 * **layer 1** — you write the loop yourself, or use a provider's mini version such as Anthropic's Tool Runner (`client.beta.messages.tool_runner`)
 * **layers 3–4** — a harness or code agent runs it for you, e.g. tau's `tau_agent` or pi's `pi-agent-core`
+
+
+
+ReAct

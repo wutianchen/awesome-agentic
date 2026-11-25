@@ -40,9 +40,14 @@ So, there are three kinds of setting of MCP
 
 what is a mcp client ? what is a mcp server ? why we need this client-server pair structure ?
 
+## MCP Apps
+
+* [MCP Apps](mcp-apps.md) — extension that lets tools return interactive UI rendered inside the host; how it differs from MCP, and a table of popular apps
+
 
 
 ## Articles
 
+* https://mcpservers.org/
 * [What Is MCP, and Why Is Everyone – Suddenly!– Talking About It?](https://huggingface.co/blog/Kseniase/mcp)
 * [Top 11 essential mcp libraries](https://huggingface.co/blog/LLMhacker/top-11-essential-mcp-libraries)

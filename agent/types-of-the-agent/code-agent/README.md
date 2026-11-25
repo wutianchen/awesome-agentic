@@ -15,7 +15,7 @@ Moved to the repo root: [Layers of Using LLM](../README.md#layers-of-using-llm)
 * [opencode](https://opencode.ai/)
 * [openrouter](https://openrouter.ai/)
 * [Claw Code](https://github.com/ultraworkers/claw-code)
-* openclaw ?
+* [openclaw](../openclaw.md) — personal assistant with a Gateway control plane, not a code agent itself
 * [pi code agent](https://pi.dev/)
 * [tau](https://github.com/huggingface/tau)
 

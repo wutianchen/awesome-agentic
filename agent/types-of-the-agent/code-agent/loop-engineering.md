@@ -61,6 +61,7 @@ The loop is trivial; the moat was never the loop. It's everything that keeps the
 
 ## References
 
+* [4 Types of AI Agent Loops: From Human-Led to Autonomous](https://www.youtube.com/watch?v=4LINhsEZEDI)
 * [What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/) — Zechner on pi
 * [huggingface/tau](https://github.com/huggingface/tau) — the loop as a teaching codebase (`tau_agent`)
 * [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — Anthropic on workflows vs agents
